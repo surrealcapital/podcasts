@@ -1,22 +1,28 @@
 body {
   padding: 10px;
   margin: 0;
-  background-color: #eee;
-  background-image: url(watercolor.JPG);
+  background-color: #fff;
+  background-image: url(back.jpg);
   background-size: 100%;
 }
 
-img {
-  width: 100%;
-  max-width: 700px;
-}
-
-h1, h2, a, p {
+h1, h2, a, header, p {
   font-family: Barlow;
   font-size: 1.5rem;
   font-weight: 100;
   margin: 5px;
   color: #eee;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0px 10px;
+  float: left;
 }
 
 section {
@@ -44,17 +50,14 @@ p {
 a {
   text-decoration: none;
   font-size: 1.7rem;
-  color: #111;
-  text-shadow: 0;
-  transition: text-shadow 2.5s;
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.5);
-  line-height: 2.4rem;
+  color: rgba(220, 200, 30, 0.9);
+  text-shadow: 2px 2px rgba(60, 60, 20, 0.8);
+  display: block;
+  line-height: 2.2rem;
+  padding: 5px;
 }
 
 a:hover {
-  text-shadow: 6px 2px rgba(240, 10, 220, 0.8);
-  background-color: rgb(1, 1, 1, 0.1);
   color: #eee;
-  transition: text-shadow 0.5s;
+  text-shadow: 2px 2px rgba(1, 1, 1, 0.8);
 }

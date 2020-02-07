@@ -1,5 +1,5 @@
 body {
-  padding: 10px;
+  padding: 0 10px;
   margin: 0;
   background-color: #fff;
   background-image: url(back.jpg);
@@ -23,27 +23,33 @@ ol {
   z-index: 1;
 }
 
+li a {
+  display: inline-block;
+  float: right;
+}
+
 li {
-  margin: 0px 10px;
+  margin: 10px;
   float: left;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-}
-
-section a:last-child {
-  margin-bottom: 20px;
+  background: linear-gradient(rgba(20, 120, 210, 0.65), rgba(1, 1, 1, 0.0));
+  font-size: 1.5rem;
+  font-family: Barlow;
+  padding: 5px;
+  color: rgb(220, 200, 10);
 }
 
 header {
   margin: 20px 5px 40px 5px;
   color: rgba(220, 170, 20, 0.8);
-  font-size: 3.05rem;
-  font-weight: bold;
+  font-size: 0rem;
   position: relative;
   z-index: 1;
+  background-image: url(logo.png);
+  background-size: 98%;
+  background-position: -10px;
+  height: 100px;
+  width: 50vw;
+  min-width: 200px;
 }
 
 p {
@@ -81,7 +87,7 @@ a:hover {
 #swerve2 {
   width: 60vw;
   height: 60vw;
-  background-color: rgba(220, 100, 100, 0.6);
+  background-color: rgba(220, 100, 100, 0.7);
 }
 
 @media only screen and (max-width: 800px) {
@@ -89,9 +95,9 @@ a:hover {
     color: rgba(100, 220, 190, 0.7);
   }
   #swerve2 {
-    width: 50vw;
-    height: 50vw;
-    background-color: rgba(20, 100, 230, 0.5);
+    width: 70vw;
+    height: 70vw;
+    background-color: rgba(20, 100, 230, 0.8);
   }
 }
 
@@ -100,8 +106,8 @@ a:hover {
     color: rgba(50, 220, 120, 0.9);
   }
   #swerve2 {
-    width: 40vw;
-    height: 40vw;
-    background-color: rgba(20, 200, 230, 0.5);
+    width: 70vw;
+    height: 70vw;
+    background-color: rgba(20, 200, 230, 0.8);
   }
 }

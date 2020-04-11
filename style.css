@@ -2,9 +2,7 @@ body {
   padding: 0 10px;
   margin: 0;
   background-color: #fff;
-  background-image: url(back.jpg);
-  background-size: 100%;
-  background-position: fixed;
+  background-image: url(topography.svg);
 }
 
 a, header, p {
@@ -17,39 +15,40 @@ a, header, p {
 
 ol {
   list-style-type: none;
-  margin: 0;
+  margin: 90px 0 0 0;
   padding: 0;
   position: relative;
   z-index: 1;
 }
 
-li a {
-  display: inline-block;
-  float: right;
-}
-
 li {
   margin: 10px;
   float: left;
-  background: linear-gradient(rgba(20, 120, 210, 0.65), rgba(1, 1, 1, 0.0));
   font-size: 1.5rem;
   font-family: Barlow;
   padding: 5px;
   color: rgb(220, 200, 10);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 header {
-  margin: 20px 5px 40px 5px;
-  color: rgba(220, 170, 20, 0.8);
-  font-size: 0rem;
-  position: relative;
-  z-index: 1;
-  background-image: url(logo.png);
-  background-size: 98%;
-  background-position: -10px;
-  height: 100px;
-  width: 50vw;
-  min-width: 200px;
+  margin: 0;
+  color: #111;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 55, 0.8);
+  padding: 50px 2px 2px 2px;
+  line-height: 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #111;
+  background-color: #fff;
 }
 
 p {
@@ -60,12 +59,12 @@ p {
 
 a {
   text-decoration: none;
-  font-size: 1.7rem;
-  color: rgba(220, 200, 30, 0.9);
-  text-shadow: 2px 2px rgba(60, 60, 20, 0.8);
+  font-size: 1.3rem;
+  color: rgb(20, 200, 230);
   display: block;
-  line-height: 2.2rem;
+  line-height: 1.7rem;
   padding: 5px;
+  text-transform: uppercase;
 }
 
 a:hover {
@@ -73,41 +72,6 @@ a:hover {
   text-shadow: 2px 2px rgba(1, 1, 1, 0.8);
 }
 
-#swerve, #swerve2 {
-  width: 105vw;
-  height: 105vw;
-  background-color: rgba(120, 210, 100, 0.3);
-  position: absolute;
-  left: -10vw;
-  top: -10vw;
-  border-radius: 50%;
-  z-index: 0;
-}
-
-#swerve2 {
-  width: 60vw;
-  height: 60vw;
-  background-color: rgba(220, 100, 100, 0.7);
-}
-
-@media only screen and (max-width: 800px) {
-  header {
-    color: rgba(100, 220, 190, 0.7);
-  }
-  #swerve2 {
-    width: 70vw;
-    height: 70vw;
-    background-color: rgba(20, 100, 230, 0.8);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    color: rgba(50, 220, 120, 0.9);
-  }
-  #swerve2 {
-    width: 70vw;
-    height: 70vw;
-    background-color: rgba(20, 200, 230, 0.8);
-  }
+.small a {
+  font-size: 1rem;
 }
